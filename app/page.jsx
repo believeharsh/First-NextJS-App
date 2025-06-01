@@ -44,7 +44,7 @@ export default function HomePage() {
                     <div className="flex items-center mb-4">
                       <div className="relative">
                         <img 
-                          src={user?.profilePicture || 'https://via.placeholder.com/50'} 
+                          src={user.profilePicture} 
                           alt={user?.fullName || 'User'} 
                           className="w-12 h-12 rounded-full border-2 border-gray-600 group-hover:border-purple-500 transition-colors duration-300" 
                         />
