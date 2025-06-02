@@ -3,8 +3,8 @@ import { getPostById, getUserByUsername } from '../../../lib/data';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
-export default function SinglePostPage({ params }) {
-  const { postId } = params;
+export default async function SinglePostPage({ params }) {
+  const { postId } = await params;
 
   const post = getPostById(postId);
 
